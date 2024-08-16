@@ -1,0 +1,77 @@
+.modal-layout-me {
+  height: 100%;
+  background-color: #ffc244;
+
+  .modal-layout-header {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    .modal-layout-header__button__back {
+      width: 50px;
+      margin-left: -15px;
+    }
+
+    .modal-layout-header__button__help {
+      max-width: calc(25% - 10px);
+      white-space: nowrap;
+      width: 100px;
+    }
+  }
+
+  .modal-layout__title {
+    color: black;
+    margin: 0px 0px 50px 20px;
+  }
+
+  .modal-layout-body {
+    box-shadow: -0px 8px 5px 4px black;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: rgb(255, 255, 255);
+
+    .modal-layout-body__title {
+      color: black;
+      margin: 50px 0px 20px 20px;
+      padding-top: 30px;
+    }
+
+    .modal-layout-body__buttons {
+      .modal-layout-body-buttons__button {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: rgb(43, 43, 43);
+        font-weight: normal;
+
+        .left-content {
+          display: flex;
+          align-items: center;
+        }
+
+        .modal-layout-body-buttons__button__span {
+          margin-left: 10px;
+        }
+
+        .modal-layout-body-buttons__button__icon {
+          color: gray;
+        }
+
+        .right-content {
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      .register-layout__header__middle {
+        padding: 5px 15px 10px 15px;
+      }
+    }
+  }
+}

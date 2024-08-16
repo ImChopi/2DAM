@@ -1,0 +1,13 @@
+.modal-landing {
+  height: 100%;
+  --ion-background-color: white;
+}
+
+.modal-layout-register {
+
+}
+
+.modal-layout__toolbar__icon {
+  --ion-color: black;
+}
+

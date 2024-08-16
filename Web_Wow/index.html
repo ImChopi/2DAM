@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- For a gallery funcionality -->
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+  </script>
+  <title>Dragonflight - World of Warcraft</title>
+</head>
+
+<body>
+  <div id="wrapper">
+    <nav>
+      <div class="topnav" id="myTopnav">
+        <a href="#hero" class="active">Home</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#wow1">Expansion</a>
+        <a href="#info1">Azeroth</a>
+        <a href="#wow2">Dragonflight</a>
+        <a href="#info2">New</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i id="burguer" class="fa fa-bars"></i>
+        </a>
+      </div>
+    </nav>
+    <section id="hero">
+      <video autoplay muted loop id="myVideo">
+        <source src="./videos/hero.mp4" type="video/mp4">
+      </video>
+      <div id="content">
+        <div class="title">
+          WELCOME THE DRACTHYR EVOKER
+        </div>
+        <br>
+        <p>
+          Dragonflight launches Novemeber 28 at 3pm Pacific. Pre-purchase now and get early access to the
+          Dracthyr Evoker, available this week along with the Tempest Unleashed event. Experience the all-
+          new primal storms, a new dungeon, and more.
+        </p>
+        <br>
+        <a href="#gallery" class="button">PRE-PURCHASE NOW</a>
+        <a href="#gallery" class="button">LEARN MORE</a>
+        <br>
+        <br>
+      </div>
+    </section>
+  </div>
+  <section id="gallery">
+    <div class="slideshow-container">
+      <div class="mySlides fade" id="image">
+        <img src="./images/1.webp" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./images/12.png" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./images/13.jpg" style="width:100%">
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <div class="fin-float"></div>
+    <br>
+  </section>
+  <section id="wow1">
+    <div class="grid4">
+      <div class="col4">
+        <a href="#wow1">
+          <div class="card">
+            <img src="./images/10.webp" alt="Green Drake on a green place with mountains">
+            <div class="container">
+              <h4 class="parte1">NEW TO WOW</h4>
+              <p class="parte2"><b>Begin Your Adventure</b></p><br>
+              <p class="parte3">Start your journey through here and try WoW for free!, we need you, a real hero!</p>
+              <br>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col4">
+        <a href="#wow1">
+          <div class="card">
+            <img src="./images/11.jpg" alt="Red Drake">
+            <div class="container">
+              <h4 class="parte1">RETURNING PLAYERS</h4>
+              <p class="parte2"><b>Welcome Back to Azeroth</b></p><br>
+              <p class="parte3">Learn how to get back in the game and play the latest content for WoW and WoW Classic
+              </p>
+              <br>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col4">
+        <a href="#wow1">
+          <div class="card">
+            <img src="./images/13.jpg" alt="Blue Drake">
+            <div class="container">
+              <h4 class="parte1">DRAGONFLIGHT</h4>
+              <p class="parte2"><b>Update Notes</b></p><br>
+              <p class="parte3">Be aware of all the updates we have and have made to Dragonflight.</p>
+              <br>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col4">
+        <a href="#wow1">
+          <div class="card">
+            <img src="./images/15.webp" alt="Red Dracthyr">
+            <div class="container">
+              <h4 class="parte1">LATEST UPDATES</h4>
+              <p class="parte2"><b>Hotfixes</b></p><br>
+              <p class="parte3">Live fixes for unusual bugs, you can report any bug here to have it fixed.</p>
+              <br>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <br>
+  <hr>
+  <br>
+  <section id="info1">
+    <div class="grid2">
+      <div class="col2 imagen">
+        <img src="./images/1.webp" alt="Alexstrasza">
+      </div>
+      <div class="col2 texto">
+        <ul>
+          <li><strong>Bring your friends to Azeroth, adventure together and earn epic rewards. Receive unique in-game
+              benefits and perks with the new program, from game time to mounts and pets when your friends join you to
+              fight for the Alliance or the Horde!</strong></li>
+
+          <li><strong>The dragonflights of Azeroth have returned, called upon to defend their ancestral home, the Dragon
+              Isles. Battle to level 70 as the Dracthyr Evoker, explore four new zones, conquer eight new dungeons, and
+              enter a new age of adventure today!</strong></li>
+
+        </ul>
+      </div>
+      <div class="col2 imagen">
+        <img src="./images/3.jpg" alt="WOW logo with a pink drake">
+      </div>
+      <div class="col2 texto">
+        <ul id="lista2">
+          <!-- un id para "subir" la segunda lista y que visualmente parezca una sola -->
+          <li><strong>The dragonflights of Azeroth have returned, called upon to defend their ancestral home, the Dragon
+              Isles. Surging with elemental magic and the life energies of Azeroth, the Isles are awakening once more,
+              and it's up to you to explore their primordial wonder and discover long-forgotten secrets.</strong></li>
+
+          <li><strong>Dominate the Dragon Isles as a newly awakened Dracthyr Evoker, World of Warcraft’s first-ever
+              playable race-and-class combo.</strong></li>
+
+          <li><strong>Master the art of Dragonriding, a new form of aerial movement. Explore the land and obtain four
+              new Dragon Isles Drakes—unique, customizable mounts that can be truly made your own. With millions of
+              possible combinations to choose from, no two Drakes are the same.</strong></li>
+
+        </ul>
+      </div>
+    </div>
+  </section>
+  <br>
+  <hr>
+  <br>
+  <section id="wow2">
+    <div class="grid4">
+      <div class="col4">
+        <a href="#wow2">
+          <div class="card">
+            <img src="./images/6.webp" alt="Gnomo with a blue drake">
+            <div class="container">
+              <h4 class="parte1">CHOOSE YOUR ALLEGIANCE</h4>
+              <br>
+              <p class="parte2"><b>Dracthyr Evokers can be Horde or the Alliance</b></p>
+              <br>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col4">
+        <a href="#wow2">
+          <div class="card">
+            <img src="./images/5.webp" alt="Big pink drake">
+            <div class="container">
+              <h4 class="parte1">NEW TALENT SYSTEM</h4>
+              <br>
+              <p class="parte2"><b>Gain talent points with each level-up and spend them in two distinct talent trees</b>
+              </p><br>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col4">
+        <a href="#wow2">
+          <div class="card">
+            <img src="./images/4.webp" alt="Beautifull place for drakes">
+            <div class="container">
+              <h4 class="parte1">PROFESSIONS AND CRAFTING</h4>
+              <br>
+              <p class="parte2"><b>Become a Dragon Isles artisan and fulfill crafting orders for your realm</b></p><br>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col4">
+        <a href="#wow2">
+          <div class="card">
+            <img src="./images/7.jfif" alt="Blue Drake">
+            <div class="container">
+              <h4 class="parte1">New HUD Interface</h4>
+              <br>
+              <p class="parte2"><b>We're revamping WoW's HUD UI from the fround up</b></p><br>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <br>
+  <hr>
+  <br>
+  <section id="info2">
+    <div class="grid2">
+      <div class="col2 texto">
+        <ul>
+          <strong>
+            <li>Use your new riding abilities to keep yourself and your Drake in the air—but beware! The denizens of the
+            Dragon Isles will knock out inexperienced Dragonriders right out of the sky.</li>
+
+            <li>As you grow in skill, you and your Drake will master new maneuvers. Fight against exhaustion and the pull
+            of the earth, and soar above the Dragon Isles.</li>
+
+            <li>Continue to improve your Dragonriding skill by hunting down ancient glyphs and advancing your new
+            Dragonriding skill tree.</li>
+          </strong>
+        </ul>
+      </div>
+      <div class="col2 imagen">
+        <img src="./images/8.avif" alt="Pink Drake">
+      </div>
+      <div class="col2 texto">
+        <ul id="lista2">
+          <!-- un id para "subir" la segunda lista y que visualmente parezca una sola -->
+          <strong>
+            <li>Dragonflight brings significant updates to existing game systems. Experience the largest talent system
+            revamp yet, HUD (Heads Up Display) improvements, along with a whole new crafting and profession system, and
+            find new ways to adventure across Azeroth.</li>
+
+            <li>Ascend to new heights of power as you explore the Dragon Isles, earning new talents every step of the way
+            to level 70.</li>
+
+            <li>Venture into the ancient prison of the Primal Incarnates before their malevolent power can be unleashed
+            against the Dragon Aspects.</li>
+
+            <li>Fight to reclaim Neltharus, stronghold of the black dragonflight, explore previously unknown chambers of
+            Uldaman, defend the Life Pools of the red dragonflight, and more!</li>
+          </strong>
+        </ul>
+      </div>
+      <div class="col2 imagen">
+        <img src="./images/9.webp" alt="Red Dracthyr">
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="grid3">
+      <div id="colu1" class="col3">
+          <a class="enlace" href="#hero"><b>Home</b></a><br>
+          <a class="enlace" href="#gallery"><b>Gallery</b></a><br>
+          <a class="enlace" href="#wow1"><b>Expansion</b></a><br>
+          <a class="enlace" href="#info1"><b>Azeroth</b></a><br>
+          <a class="enlace" href="#wow2"><b>Dragonflight</b></a><br>
+          <a class="enlace" href="#info2"><b>New</b></a><br>
+      </div>
+      <div class="col3">
+        <p>Social</p>
+        <a href="https://twitter.com/home" class="fa fa-twitter"></a>
+        <a href="https://www.google.es" class="fa fa-google"></a>
+        <a href="https://www.youtube.com" class="fa fa-youtube"></a>
+        <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+      </div>
+    </div>
+  </footer>
+  <span class="ir-arriba fa fa-angle-up" id="arriba"></span>
+  <script src="./js/funciones.js"></script>
+</body>
+
+</html>

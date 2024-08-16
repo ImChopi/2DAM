@@ -1,0 +1,31 @@
+.modal-layout__img {
+  margin-top: 30px;
+  width: 20%;
+}
+
+.modal-layout__header {
+  color: black;
+  margin-top: 20px;
+}
+
+.modal-layout__header__input__form {
+  display: flex;
+  gap: 400px;
+  align-content: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.modal-layout__header__input__form__item {
+  background: transparent !important;
+}
+
+.modal-layout__header__input__form__input {
+  --padding-start: 15px;
+  --highlight-color-focused: none;
+  --color: rgb(0, 0, 0);
+}
+
+.modal-layout__header__input__form__input:focus {
+  border: 1px solid black !important;
+}

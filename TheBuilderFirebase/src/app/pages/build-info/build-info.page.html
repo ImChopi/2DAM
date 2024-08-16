@@ -1,0 +1,40 @@
+<ion-content [fullscreen]="true">
+  <div class="flex">
+    <ion-card class="card-about" *ngFor="let build of builds$ | async">
+      <div class="card-content">
+        <ion-card-header class="card-header">
+          <div class="avatar-img">
+            <img
+              [src]="build.class.classImage"
+              alt="Class Image"
+            />
+          </div>
+        </ion-card-header>
+      </div>
+      <ion-card-content>
+        <ion-card-title>{{build.buildName| uppercase}}</ion-card-title>
+        <ion-card-title class="class"
+          >{{build.class.className | uppercase}}</ion-card-title
+        >
+        <div class="custom-item">
+          <p class="custom-item-name" appyellow>{{build.fullItem.itemName | uppercase}}</p>
+          <p>{{build.fullItem.type.typeName}}</p>
+          <p>{{build.fullItem.quality.qualityName}}</p>
+        </div>
+        <div class="button-container">
+          <ion-button fill="clear" color="secondary" [routerLink]="['/','build', 'update', build.idBuild]">
+            <ion-icon name="create"></ion-icon>
+          </ion-button>
+          <ion-button fill="clear" color="danger" (click)="deleteBuild(build.idBuild)">
+            <ion-icon name="trash"></ion-icon>
+          </ion-button>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="danger" routerLink="/build-form">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

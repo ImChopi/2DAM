@@ -1,0 +1,47 @@
+.modal-layout {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+
+  .modal-layout__button {
+    height: 30px;
+    width: 5%;
+  }
+
+  .modal-layout__searchbar {
+    --color: rgb(0, 0, 0);
+    width: 93%;
+
+    .searchbar-input-container {
+      padding-left: 10px;
+      border-radius: 50px;
+      background: rgb(229, 230, 231);
+    }
+  }
+
+  .popular-layout {
+    color: rgb(65, 65, 65);
+
+    .popular-layout__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+      .button {
+        flex: calc(30% - 10px);
+        max-width: calc(30% - 10px);
+        white-space: nowrap;
+        padding: 5px 10px 5px 10px;
+      }
+
+      .button-span {
+        font-size: 0.6em;
+        color: black;
+      }
+
+    }
+  }
+}

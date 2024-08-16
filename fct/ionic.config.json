@@ -1,0 +1,7 @@
+{
+  "name": "fct",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
